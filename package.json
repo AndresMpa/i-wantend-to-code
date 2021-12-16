@@ -1,0 +1,23 @@
+{
+  "name": "i-wantend-to-code",
+  "version": "1.0.0",
+  "description": "Just append something dude",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresMpa/i-wantend-to-code.git"
+  },
+  "keywords": [
+    "js",
+    "node"
+  ],
+  "author": "AndresMpa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndresMpa/i-wantend-to-code/issues"
+  },
+  "homepage": "https://github.com/AndresMpa/i-wantend-to-code#readme"
+}

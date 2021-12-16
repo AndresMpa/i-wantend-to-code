@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #3b4363;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background: linear-gradient(#1f3756, #141539);
+  height: 96vh;
+}
+
+ul,
+ol,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #3b4363;
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  border: none;
+  margin: 0.8% auto;
+  background-color: #606e85;
+}
+
+.container {
+  padding: 1.5%;
+  display: flex;
+  border-radius: 12px;
+  border: 3px solid #606e85;
+}
+
+.dashboard {
+  width: 48%;
+  margin: 2% auto;
+}
+.dashboard .score {
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  background-color: white;
+  border: 3px solid white;
+  padding: 1% 6%;
+}
+.dashboard .score p {
+  color: #2a46c0;
+  font-size: 1.05em;
+}
+.dashboard .score h2 {
+  font-size: 4em;
+}
+
+.game {
+  display: block;
+}
+.game #board {
+  display: grid;
+  grid-template-areas: "rck rck" "ppr sss" "sck lzd";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.game div {
+  place-items: center;
+  display: grid;
+  background-color: white;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.game #rock,
+.game #paper,
+.game #scissors,
+.game #spock,
+.game #lizard {
+  border-radius: 50%;
+  place-self: center;
+  padding: 1.8%;
+}
+.game #rock {
+  grid-area: rck;
+  background: radial-gradient(#dc2e4e, #dd405d);
+}
+.game #paper {
+  grid-area: ppr;
+  background: radial-gradient(#4865f4, #5671f5);
+}
+.game #scissors {
+  grid-area: sss;
+  background: radial-gradient(#ec9e0e, #eca922);
+}
+.game #spock {
+  grid-area: sck;
+  background: radial-gradient(#40b9ce, #52bed1);
+}
+.game #lizard {
+  grid-area: lzd;
+  background: radial-gradient(#834fe3, #8c5de5);
+}
+.game .rules {
+  margin-right: 2.5%;
+  margin-left: auto;
+  font-size: 1.15em;
+  padding: 0.8% 3%;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

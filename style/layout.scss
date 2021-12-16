@@ -1,0 +1,96 @@
+.container {
+  padding: 1.5%;
+  display: flex;
+  border-radius: 12px;
+  border: 3px solid $headerOutline;
+}
+
+.dashboard {
+  width: 48%;
+  margin: 2% auto;
+  .score {
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+
+    background-color: white;
+    border: 3px solid white;
+    padding: 1% 6%;
+
+    p {
+      color: $scoreText;
+      font-size: 1.05em;
+    }
+
+    h2 {
+      font-size: 4em;
+    }
+  }
+}
+
+.game {
+  display: block;
+  #board {
+    display: grid;
+    grid-template-areas:
+      "rck rck"
+      "ppr sss"
+      "sck lzd";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  div {
+    place-items: center; 
+    display: grid;
+
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  #rock,
+  #paper,
+  #scissors,
+  #spock,
+  #lizard {
+    border-radius: 50%;
+    place-self: center;
+    padding: 1.8%;
+  }
+
+  #rock {
+    grid-area: rck;
+    background: radial-gradient($rock-top, $rock-bottom);
+  }
+
+  #paper {
+    grid-area: ppr;
+    background: radial-gradient($paper-top, $paper-bottom);
+  }
+
+  #scissors {
+    grid-area: sss;
+    background: radial-gradient($scissors-top, $scissors-bottom);
+  }
+
+  #spock {
+    grid-area: sck;
+    background: radial-gradient($spock-top, $spock-bottom);
+  }
+
+  #lizard {
+    grid-area: lzd;
+    background: radial-gradient($lizard-top, $lizard-bottom);
+  }
+
+  .rules {
+    margin-right: 2.5%;
+    margin-left: auto;
+
+    font-size: 1.15em;
+    padding: 0.8% 3%;
+    color: white;
+  }
+}
