@@ -94,3 +94,13 @@
     color: white;
   }
 }
+
+.rules {
+  position: relative;
+
+  article {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+  }
+}

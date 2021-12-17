@@ -6,9 +6,9 @@
   margin: 0%;
 }
 
-body {
+html {
   background: linear-gradient(#1f3756, #141539);
-  height: 96vh;
+  height: 100vh;
 }
 
 ul,
@@ -107,6 +107,15 @@ hr {
   font-size: 1.15em;
   padding: 0.8% 3%;
   color: white;
+}
+
+.rules {
+  position: relative;
+}
+.rules article {
+  position: absolute;
+  top: -40px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
