@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Just append something dude",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "test": "test",
     "serve": "firefox index.html"
