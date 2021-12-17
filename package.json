@@ -1,14 +1,15 @@
 {
-  "name": "i-wantend-to-code",
+  "name": "rock-paper-scissors-spock-lizard",
   "version": "1.0.0",
   "description": "Just append something dude",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "serve": "firefox index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndresMpa/i-wantend-to-code.git"
+    "url": "git+https://github.com/AndresMpa/rock-paper-scissors-spock-lizard.git"
   },
   "keywords": [
     "js",
@@ -17,7 +18,7 @@
   "author": "AndresMpa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndresMpa/i-wantend-to-code/issues"
+    "url": "https://github.com/AndresMpa/rock-paper-scissors-spock-lizard/issues"
   },
-  "homepage": "https://github.com/AndresMpa/i-wantend-to-code#readme"
+  "homepage": "https://github.com/AndresMpa/rock-paper-scissors-spock-lizard#readme"
 }
