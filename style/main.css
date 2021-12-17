@@ -40,6 +40,9 @@ hr {
   width: 48%;
   margin: 2% auto;
 }
+.dashboard article {
+  padding: 2.5% 3%;
+}
 .dashboard .score {
   flex-direction: column;
   align-items: center;
