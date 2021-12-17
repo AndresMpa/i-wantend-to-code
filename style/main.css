@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 * {
+  overflow-anchor: none;
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #3b4363;
   padding: 0%;
