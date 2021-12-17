@@ -1,3 +1,6 @@
+#sass
+*.css.map
+
 # Logs
 logs
 *.log
