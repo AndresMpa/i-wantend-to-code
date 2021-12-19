@@ -29,142 +29,6 @@ hr {
   background-color: #606e85;
 }
 
-.game {
-  display: block;
-}
-.game #board {
-  display: grid;
-  grid-template-areas: "rck rck" "ppr sss" "sck lzd";
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.game #board div {
-  place-items: center;
-  display: grid;
-  height: 100px;
-  width: 100px;
-}
-.game #board #rock,
-.game #board #paper,
-.game #board #scissors,
-.game #board #spock,
-.game #board #lizard {
-  position: relative;
-  border-radius: 50%;
-  place-self: center;
-  padding: 1.8%;
-}
-.game #board #rock {
-  padding: 1.25%;
-  grid-area: rck;
-}
-.game #board #paper {
-  top: 0%;
-  left: 25%;
-  grid-area: ppr;
-}
-.game #board #scissors {
-  top: 0%;
-  right: 25%;
-  grid-area: sss;
-}
-.game #board #spock {
-  top: 20%;
-  left: 35%;
-  grid-area: sck;
-}
-.game #board #lizard {
-  top: 20%;
-  right: 35%;
-  grid-area: lzd;
-}
-.game #picking {
-  justify-content: center;
-  padding-top: 5%;
-  margin: 0 auto;
-  display: none;
-  height: 50vh;
-  width: 80%;
-}
-.game #picking h1 {
-  margin-bottom: 15%;
-  color: white;
-}
-.game #picking .pick {
-  margin: 0 5% 0;
-}
-.game #picking div {
-  justify-content: space-around;
-  flex-direction: column;
-  place-content: center;
-  place-items: center;
-  display: flex;
-  height: 15em;
-  width: 15em;
-}
-.game #picking div img {
-  width: 10em;
-}
-.game #picking #user,
-.game #picking #system {
-  position: relative;
-  border-radius: 50%;
-  place-self: center;
-  padding: 15%;
-}
-.game #picking #result {
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  font-size: 4em;
-  color: white;
-}
-.game #picking #result span {
-  background-color: white;
-  border-radius: 8px;
-  padding: 5%;
-  color: #3b4363;
-  font-size: 0.4em;
-}
-.game .rounded {
-  background-color: white;
-  border-radius: 50%;
-}
-.game .rock {
-  background: radial-gradient(#dc2e4e, #dd405d);
-}
-.game .paper {
-  background: radial-gradient(#4865f4, #5671f5);
-}
-.game .scissors {
-  background: radial-gradient(#ec9e0e, #eca922);
-}
-.game .spock {
-  background: radial-gradient(#40b9ce, #52bed1);
-}
-.game .lizard {
-  background: radial-gradient(#834fe3, #8c5de5);
-}
-
-@media (max-width: 850px) {
-  .game #board {
-    gap: 40px;
-    margin-top: 10%;
-  }
-  .game #board #paper {
-    left: 5%;
-  }
-  .game #board #scissors {
-    right: 5%;
-  }
-  .game #board #spock {
-    left: 20%;
-  }
-  .game #board #lizard {
-    right: 20%;
-  }
-}
 .rules {
   position: relative;
 }
@@ -227,6 +91,145 @@ hr {
   display: flex;
   border-radius: 12px;
   border: 3px solid #606e85;
+}
+
+.game {
+  display: block;
+}
+.game #board {
+  display: grid;
+  grid-template-areas: "rck rck" "ppr sss" "sck lzd";
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.game #board div {
+  place-items: center;
+  display: grid;
+  height: 100px;
+  width: 100px;
+}
+.game #board #rock,
+.game #board #paper,
+.game #board #scissors,
+.game #board #spock,
+.game #board #lizard {
+  position: relative;
+  border-radius: 50%;
+  place-self: center;
+  padding: 1.8%;
+}
+.game #board #rock {
+  padding: 1.25%;
+  grid-area: rck;
+}
+.game #board #paper {
+  top: 0%;
+  left: 25%;
+  grid-area: ppr;
+}
+.game #board #scissors {
+  top: 0%;
+  right: 25%;
+  grid-area: sss;
+}
+.game #board #spock {
+  top: 20%;
+  left: 35%;
+  grid-area: sck;
+}
+.game #board #lizard {
+  top: 20%;
+  right: 35%;
+  grid-area: lzd;
+}
+
+@media (max-width: 850px) {
+  .game #board {
+    gap: 40px;
+    margin-top: 10%;
+  }
+  .game #board #paper {
+    left: 5%;
+  }
+  .game #board #scissors {
+    right: 5%;
+  }
+  .game #board #spock {
+    left: 20%;
+  }
+  .game #board #lizard {
+    right: 20%;
+  }
+}
+.game #picking {
+  justify-content: center;
+  padding-top: 5%;
+  margin: 0 auto;
+  display: none;
+  height: 50vh;
+  width: 80%;
+}
+.game #picking h1 {
+  margin-bottom: 15%;
+  color: white;
+}
+.game #picking .pick {
+  margin: 0 5% 0;
+}
+.game #picking div {
+  justify-content: space-around;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  display: flex;
+  height: 15em;
+  width: 15em;
+}
+.game #picking div img {
+  width: 10em;
+}
+.game #picking #user,
+.game #picking #system {
+  position: relative;
+  border-radius: 50%;
+  place-self: center;
+  padding: 15%;
+}
+.game #picking .result {
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  font-size: 4em;
+}
+.game #picking .result p {
+  color: white;
+}
+.game #picking .result span {
+  background-color: white;
+  border-radius: 8px;
+  padding: 5%;
+  color: #3b4363;
+  font-size: 0.4em;
+}
+.game .rounded {
+  background-color: white;
+  border-radius: 50%;
+}
+.game .rock {
+  background: radial-gradient(#dc2e4e, #dd405d);
+}
+.game .paper {
+  background: radial-gradient(#4865f4, #5671f5);
+}
+.game .scissors {
+  background: radial-gradient(#ec9e0e, #eca922);
+}
+.game .spock {
+  background: radial-gradient(#40b9ce, #52bed1);
+}
+.game .lizard {
+  background: radial-gradient(#834fe3, #8c5de5);
 }
 
 /*# sourceMappingURL=main.css.map */

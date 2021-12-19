@@ -1,13 +1,13 @@
 export const getWinner = (pick, options) => {
   if (options.beats.includes(pick[1]) && !options.lose.includes(pick[1])) {
-    console.log("Win");
+    return ["YOU WIN", 1];
   }
 
   if (!options.beats.includes(pick[1]) && options.lose.includes(pick[1])) {
-    console.log("Lose");
+    return ["YOU LOSE", -1];
   }
 
   if (!options.beats.includes(pick[1]) && !options.lose.includes(pick[1])) {
-    console.log("Draw");
+    return ["DRAW", 0];
   }
 };

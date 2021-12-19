@@ -15,8 +15,7 @@ export const eventHandler = () => {
   playerPicks.forEach((item) => {
     item.addEventListener("click", (event) => {
       let picked = [event.target.title, getRandomPick()];
-      pickHandler(picked);
-      getWinner(picked, getCounter(picked));
+      pickHandler(picked, getWinner(picked, getCounter(picked)));
     });
   });
 };
