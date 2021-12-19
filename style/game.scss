@@ -1,8 +1,7 @@
 .game {
   display: block;
   #board {
-    //display: grid;
-    display: none;
+    display: grid;
     grid-template-areas:
       "rck rck"
       "ppr sss"
@@ -13,56 +12,131 @@
     div {
       place-items: center;
       display: grid;
-
-      background-color: white;
-      border-radius: 50%;
       height: 100px;
       width: 100px;
     }
+
+    #rock,
+    #paper,
+    #scissors,
+    #spock,
+    #lizard {
+      position: relative;
+      border-radius: 50%;
+      place-self: center;
+      padding: 1.8%;
+    }
+
+    #rock {
+      padding: 1.25%;
+      grid-area: rck;
+    }
+
+    #paper {
+      top: 0%;
+      left: 25%;
+      grid-area: ppr;
+    }
+
+    #scissors {
+      top: 0%;
+      right: 25%;
+      grid-area: sss;
+    }
+
+    #spock {
+      top: 20%;
+      left: 35%;
+      grid-area: sck;
+    }
+
+    #lizard {
+      top: 20%;
+      right: 35%;
+      grid-area: lzd;
+    }
   }
 
-  #rock,
-  #paper,
-  #scissors,
-  #spock,
-  #lizard {
-    position: relative;
+  #picking {
+    justify-content: center;
+    padding-top: 5%;
+    margin: 0 auto;
+    display: none;
+    height: 50vh;
+    width: 80%;
+
+    h1 {
+      margin-bottom: 15%;
+      color: white;
+    }
+
+    .pick {
+      margin: 0 5% 0;
+    }
+
+    div {
+      justify-content: space-around;
+      flex-direction: column;
+      place-content: center;
+      place-items: center;
+      display: flex;
+      height: 15em;
+      width: 15em;
+
+      img {
+        width: 10em;
+      }
+    }
+
+    #user,
+    #system {
+      position: relative;
+      border-radius: 50%;
+      place-self: center;
+      padding: 15%;
+    }
+
+    #result {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      font-size: 4em;
+      color: white;
+
+      span {
+        background-color: white;
+        border-radius: 8px;
+        padding: 5%;
+
+        color: $darkText;
+        font-size: 0.4em;
+      }
+    }
+  }
+
+  .rounded {
+    background-color: white;
     border-radius: 50%;
-    place-self: center;
-    padding: 1.8%;
   }
 
-  #rock {
-    padding: 1.25%;
-    grid-area: rck;
+  .rock {
     background: radial-gradient($rock-top, $rock-bottom);
   }
 
-  #paper {
-    top: 0%;
-    left: 25%;
-    grid-area: ppr;
+  .paper {
     background: radial-gradient($paper-top, $paper-bottom);
   }
 
-  #scissors {
-    top: 0%;
-    right: 25%;
-    grid-area: sss;
+  .scissors {
     background: radial-gradient($scissors-top, $scissors-bottom);
   }
 
-  #spock {
-    top: 20%;
-    left: 35%;
-    grid-area: sck;
+  .spock {
     background: radial-gradient($spock-top, $spock-bottom);
   }
 
-  #lizard {
-    top: 20%;
-    right: 35%;
-    grid-area: lzd;
+  .lizard {
     background: radial-gradient($lizard-top, $lizard-bottom);
   }
 }
@@ -72,22 +146,22 @@
     #board {
       gap: 40px;
       margin-top: 10%;
-    }
 
-    #paper {
-      left: 5%;
-    }
+      #paper {
+        left: 5%;
+      }
 
-    #scissors {
-      right: 5%;
-    }
+      #scissors {
+        right: 5%;
+      }
 
-    #spock {
-      left: 20%;
-    }
+      #spock {
+        left: 20%;
+      }
 
-    #lizard {
-      right: 20%;
+      #lizard {
+        right: 20%;
+      }
     }
   }
 }

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="icon" type="image/x-icon" href="./assent/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Rock, Paper, Scissors, Spock, Lizard</title>
   </head>
   <body>
@@ -21,8 +25,8 @@
 
     <main class="game">
       <article id="board">
-        <figure id="rock" title="rock">
-          <div title="rock">
+        <figure id="rock" title="rock" class="rock">
+          <div title="rock" class="rounded">
             <img
               src="./assent/icon-rock.svg"
               title="rock"
@@ -31,8 +35,8 @@
             />
           </div>
         </figure>
-        <figure id="paper" title="paper">
-          <div title="paper">
+        <figure id="paper" title="paper" class="paper">
+          <div title="paper" class="rounded">
             <img
               src="./assent/icon-paper.svg"
               title="paper"
@@ -41,8 +45,8 @@
             />
           </div>
         </figure>
-        <figure id="scissors" title="scissors">
-          <div title="scissors">
+        <figure id="scissors" title="scissors" class="scissors">
+          <div title="scissors" class="rounded">
             <img
               src="./assent/icon-scissors.svg"
               title="scissors"
@@ -51,8 +55,8 @@
             />
           </div>
         </figure>
-        <figure id="spock" title="spock">
-          <div title="spock">
+        <figure id="spock" title="spock" class="spock">
+          <div title="spock" class="rounded">
             <img
               src="./assent/icon-spock.svg"
               title="spock"
@@ -61,8 +65,8 @@
             />
           </div>
         </figure>
-        <figure id="lizard" title="lizard">
-          <div title="lizard">
+        <figure id="lizard" title="lizard" class="lizard">
+          <div title="lizard" class="rounded">
             <img
               src="./assent/icon-lizard.svg"
               title="lizard"
@@ -74,15 +78,40 @@
       </article>
 
       <article id="picking">
+        <div class="pick">
+          <h1>You picked</h1>
 
+          <figure id="user" title="user" class="lizard">
+            <div title="user" class="rounded">
+              <img src="./assent/icon-rock.svg" alt="rock" srcset="" />
+            </div>
+          </figure>
+        </div>
+
+        <p id="result">
+          YOU LOSE
+          <span>
+            PLAY AGAIN
+          </span>
+        </p>
+
+        <div class="pick">
+          <h1>The house picked</h1>
+
+          <figure id="system" title="system" class="lizard">
+            <div title="system" class="rounded">
+              <img src="./assent/icon-rock.svg" alt="rock" srcset="" />
+            </div>
+          </figure>
+        </div>
       </article>
-
-      <section class="rules">
-        <article class="container">
-          <p>RULES</p>
-        </article>
-      </section>
     </main>
+
+    <section class="rules">
+      <article class="container">
+        <p>RULES</p>
+      </article>
+    </section>
 
     <script type="module" src="./src/main.js"></script>
   </body>
