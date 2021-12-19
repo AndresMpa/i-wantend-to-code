@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/AndresMpa/rock-paper-scissors-spock-lizard/issues"
   },
-  "homepage": "https://github.com/AndresMpa/rock-paper-scissors-spock-lizard#readme"
+  "homepage": "https://github.com/AndresMpa/rock-paper-scissors-spock-lizard#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
 }

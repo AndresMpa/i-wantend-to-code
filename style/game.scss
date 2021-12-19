@@ -1,56 +1,24 @@
-.container {
-  padding: 1.5%;
-  display: flex;
-  border-radius: 12px;
-  border: 3px solid $headerOutline;
-}
-
-.dashboard {
-  width: 48%;
-  margin: 2% auto;
-  article {
-    padding: 2.5% 3%;
-  }
-  .score {
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-
-    background-color: white;
-    border: 3px solid white;
-    padding: 1% 6%;
-
-    p {
-      color: $scoreText;
-      font-size: 1.05em;
-    }
-
-    h2 {
-      font-size: 4em;
-    }
-  }
-}
-
 .game {
   display: block;
   #board {
-    display: grid;
+    //display: grid;
+    display: none;
     grid-template-areas:
       "rck rck"
       "ppr sss"
       "sck lzd";
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr;
-  }
 
-  div {
-    place-items: center;
-    display: grid;
+    div {
+      place-items: center;
+      display: grid;
 
-    background-color: white;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+      background-color: white;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
   }
 
   #rock,
@@ -99,27 +67,7 @@
   }
 }
 
-.rules {
-  position: relative;
-
-  article {
-    position: absolute;
-    right: 40px;
-    top: -25px;
-
-    padding: 0.8% 3%;
-    p {
-      font-size: 1.15em;
-      color: white;
-    }
-  }
-}
-
 @media (max-width: 850px) {
-  .dashboard {
-    width: 85%;
-  }
-
   .game {
     #board {
       gap: 40px;
@@ -140,21 +88,6 @@
 
     #lizard {
       right: 20%;
-    }
-  }
-
-  .rules {
-    position: initial;
-    article {
-      transform: translate(-50%, -50%);
-      position: absolute;
-      width: inherit;
-      top: initial;
-      bottom: 5%;
-      left: 50%;
-
-      place-content: center;
-      width: 20%;
     }
   }
 }

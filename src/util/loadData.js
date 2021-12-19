@@ -1,13 +1,11 @@
-const loadData = () => {
+export const loadData = () => {
   const point = localStorage.getItem("point");
-
-  if (point) {
-    document.querySelector("#score").value = point;
+  
+  if (point !== null) {
+    document.querySelector("#score").textContent = point;
   } else {
-    document.querySelector("#score").value = 0;
+    document.querySelector("#score").textContent = "0";
   }
 
-  console.log("Data from localStorage loaded");
+  //console.log("Data from localStorage loaded " + document.querySelector("#score").textContent);
 };
-
-export default loadData;

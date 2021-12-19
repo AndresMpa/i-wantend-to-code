@@ -1,0 +1,32 @@
+.rules {
+  position: relative;
+
+  article {
+    position: absolute;
+    right: 40px;
+    top: -25px;
+
+    padding: 0.8% 3%;
+    p {
+      font-size: 1.15em;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .rules {
+    position: initial;
+    article {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: inherit;
+      top: initial;
+      bottom: 5%;
+      left: 50%;
+
+      place-content: center;
+      width: 20%;
+    }
+  }
+}
