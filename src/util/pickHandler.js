@@ -50,6 +50,7 @@ const manageScore = (result) => {
   const score = document.querySelector("#score");
   setTimeout(() => {
     score.innerText = parseInt(score.innerText) + result;
+    console.log(typeof score.innerText);
     localStorage.setItem("score", score.innerText);
   }, 3500);
 };
