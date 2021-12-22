@@ -32,6 +32,9 @@ hr {
 .rules {
   position: relative;
 }
+.rules #rules {
+  cursor: pointer;
+}
 .rules article {
   position: absolute;
   right: 40px;
@@ -91,6 +94,10 @@ hr {
   display: flex;
   border-radius: 12px;
   border: 3px solid #606e85;
+}
+
+#rules + .container {
+  cursor: pointer;
 }
 
 .game {
@@ -230,6 +237,10 @@ hr {
 }
 .game .lizard {
   background: radial-gradient(#834fe3, #8c5de5);
+}
+
+#instruction {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

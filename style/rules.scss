@@ -1,6 +1,10 @@
 .rules {
   position: relative;
 
+  #rules {
+    cursor: pointer;
+  }
+
   article {
     position: absolute;
     right: 40px;

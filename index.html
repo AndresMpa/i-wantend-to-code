@@ -23,7 +23,7 @@
       </article>
     </nav>
 
-    <main class="game">
+    <main class="game" id="game">
       <article id="board">
         <figure id="rock" title="rock" class="rock">
           <div title="rock" class="rounded">
@@ -77,37 +77,87 @@
         </figure>
       </article>
 
+      <main class="game" id="instruction">
+        <article id="board">
+          <figure id="rock" title="rock" class="rock">
+            <div title="rock" class="rounded">
+              <img
+                src="./assent/icon-rock.svg"
+                title="rock"
+                alt="rock"
+                srcset=""
+              />
+            </div>
+          </figure>
+          <figure id="paper" title="paper" class="paper">
+            <div title="paper" class="rounded">
+              <img
+                src="./assent/icon-paper.svg"
+                title="paper"
+                alt="paper"
+                srcset=""
+              />
+            </div>
+          </figure>
+          <figure id="scissors" title="scissors" class="scissors">
+            <div title="scissors" class="rounded">
+              <img
+                src="./assent/icon-scissors.svg"
+                title="scissors"
+                alt="scissors"
+                srcset=""
+              />
+            </div>
+          </figure>
+          <figure id="spock" title="spock" class="spock">
+            <div title="spock" class="rounded">
+              <img
+                src="./assent/icon-spock.svg"
+                title="spock"
+                alt="spock"
+                srcset=""
+              />
+            </div>
+          </figure>
+          <figure id="lizard" title="lizard" class="lizard">
+            <div title="lizard" class="rounded">
+              <img
+                src="./assent/icon-lizard.svg"
+                title="lizard"
+                alt="lizard"
+                srcset=""
+              />
+            </div>
+          </figure>
+        </article>
+      </main>
+
       <article id="picking">
         <div class="pick">
           <h1>You picked</h1>
 
           <figure id="user" title="user" class="lizard">
-            <div title="user" class="rounded">
-            </div>
+            <div title="user" class="rounded"></div>
           </figure>
         </div>
 
         <article class="result">
-          <p id="result">
-          </p>
-          <span id="playAgain">
-            PLAY AGAIN
-          </span>
+          <p id="result"></p>
+          <span id="playAgain"> PLAY AGAIN </span>
         </article>
 
         <div class="pick">
           <h1>The house picked</h1>
 
           <figure id="system" title="system" class="lizard">
-            <div title="system" class="rounded">
-            </div>
+            <div title="system" class="rounded"></div>
           </figure>
         </div>
       </article>
     </main>
 
     <section class="rules">
-      <article class="container">
+      <article class="container" id="rules">
         <p>RULES</p>
       </article>
     </section>
