@@ -4,10 +4,10 @@ const rules = document.querySelector("#rules");
 
 export const displayRules = () => {
   rules.addEventListener("click", () => {
-    if (instruction.style.display !== "none") {
-      instruction.style.display = "none";
-    } else {
+    if (instruction.style.display !== "flex") {
       instruction.style.display = "flex";
+    } else {
+      instruction.style.display = "none";
     }
   });
 
