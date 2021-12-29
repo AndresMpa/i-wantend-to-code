@@ -1,16 +1,17 @@
-const instruction = document.querySelector("#instruction")
+const closeInstructions = document.querySelector("#closeInstructions");
+const instruction = document.querySelector("#instruction");
 const rules = document.querySelector("#rules");
-const game = document.querySelector("#game");
 
 export const displayRules = () => {
   rules.addEventListener("click", () => {
-    console.log(instruction.style);
-    if (instruction.style.display === "none") {
-      instruction.style.display = "block";
-      game.style.display = "none";
-    } else {
+    if (instruction.style.display !== "none") {
       instruction.style.display = "none";
-      game.style.display = "block";
+    } else {
+      instruction.style.display = "flex";
     }
+  });
+
+  closeInstructions.addEventListener("click", () => {
+    instruction.style.display = "none";
   });
 };

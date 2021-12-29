@@ -1,5 +1,5 @@
 #instruction {
-  display: flex;
+  display: none;
   justify-content: center;
 
   position: relative;
@@ -25,7 +25,7 @@
 
     background-color: white;
     border-radius: 8px;
-    padding: 3% 2%;
+    padding: 2% 2% 3%;
     div:nth-child(1) {
       display: flex;
       margin: 0 0px;

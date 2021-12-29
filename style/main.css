@@ -240,7 +240,7 @@ hr {
 }
 
 #instruction {
-  display: flex;
+  display: none;
   justify-content: center;
   position: relative;
   z-index: 100;
@@ -262,7 +262,7 @@ hr {
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  padding: 3% 2%;
+  padding: 2% 2% 3%;
 }
 #instruction article div:nth-child(1) {
   display: flex;
