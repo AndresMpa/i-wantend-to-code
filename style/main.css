@@ -240,7 +240,46 @@ hr {
 }
 
 #instruction {
-  display: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+#instruction .cover {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#instruction article {
+  position: absolute;
+  transform: translateY(-15%);
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 3% 2%;
+}
+#instruction article div:nth-child(1) {
+  display: flex;
+  margin: 0 0px;
+}
+#instruction article div:nth-child(1) h1 {
+  font-size: 32px;
+}
+#instruction article div:nth-child(1) figure {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+}
+#instruction article figure {
+  display: flex;
+  place-content: center;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

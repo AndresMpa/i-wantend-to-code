@@ -10,12 +10,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <title>Rock, Paper, Scissors, Spock, Lizard</title>
   </head>
   <body>
     <nav class="dashboard">
       <article class="container">
-        <img src="./assent/logo-bonus.svg" alt="logo" srcset="" />
+        <img
+          alt="logo"
+          src="./assent/logo-bonus.svg"
+          srcset="./assent/logo-bonus.svg"
+        />
         <article class="container score">
           <p>SCORE</p>
           <h2 id="score"></h2>
@@ -23,114 +28,84 @@
       </article>
     </nav>
 
+    <section id="instruction">
+      <div class="cover"></div>
+      <article>
+        <div>
+          <h1>RULES</h1>
+          <figure>
+            <img
+              alt="Close"
+              title="Close"
+              src="./assent/icon-close.svg"
+              srcset="./assent/icon-close.svg"
+            />
+          </figure>
+        </div>
+        <figure>
+          <img
+            alt="Rules"
+            title="Rules"
+            src="./assent/image-rules-bonus.svg"
+            srcset="./assent/image-rules-bonus.svg"
+          />
+        </figure>
+      </article>
+    </section>
+
     <main class="game" id="game">
       <article id="board">
         <figure id="rock" title="rock" class="rock">
           <div title="rock" class="rounded">
             <img
+              srcset="./assent/icon-rock.svg"
               src="./assent/icon-rock.svg"
               title="rock"
               alt="rock"
-              srcset=""
             />
           </div>
         </figure>
         <figure id="paper" title="paper" class="paper">
           <div title="paper" class="rounded">
             <img
+              srcset="./assent/icon-paper.svg"
               src="./assent/icon-paper.svg"
               title="paper"
               alt="paper"
-              srcset=""
             />
           </div>
         </figure>
         <figure id="scissors" title="scissors" class="scissors">
           <div title="scissors" class="rounded">
             <img
+              srcset="./assent/icon-scissors.svg"
               src="./assent/icon-scissors.svg"
               title="scissors"
               alt="scissors"
-              srcset=""
             />
           </div>
         </figure>
         <figure id="spock" title="spock" class="spock">
           <div title="spock" class="rounded">
             <img
+              srcset="./assent/icon-spock.svg"
               src="./assent/icon-spock.svg"
               title="spock"
               alt="spock"
-              srcset=""
             />
           </div>
         </figure>
         <figure id="lizard" title="lizard" class="lizard">
           <div title="lizard" class="rounded">
             <img
+              srcset="./assent/icon-lizard.svg"
               src="./assent/icon-lizard.svg"
               title="lizard"
               alt="lizard"
-              srcset=""
             />
           </div>
         </figure>
       </article>
-
-      <main class="game" id="instruction">
-        <article id="board">
-          <figure id="rock" title="rock" class="rock">
-            <div title="rock" class="rounded">
-              <img
-                src="./assent/icon-rock.svg"
-                title="rock"
-                alt="rock"
-                srcset=""
-              />
-            </div>
-          </figure>
-          <figure id="paper" title="paper" class="paper">
-            <div title="paper" class="rounded">
-              <img
-                src="./assent/icon-paper.svg"
-                title="paper"
-                alt="paper"
-                srcset=""
-              />
-            </div>
-          </figure>
-          <figure id="scissors" title="scissors" class="scissors">
-            <div title="scissors" class="rounded">
-              <img
-                src="./assent/icon-scissors.svg"
-                title="scissors"
-                alt="scissors"
-                srcset=""
-              />
-            </div>
-          </figure>
-          <figure id="spock" title="spock" class="spock">
-            <div title="spock" class="rounded">
-              <img
-                src="./assent/icon-spock.svg"
-                title="spock"
-                alt="spock"
-                srcset=""
-              />
-            </div>
-          </figure>
-          <figure id="lizard" title="lizard" class="lizard">
-            <div title="lizard" class="rounded">
-              <img
-                src="./assent/icon-lizard.svg"
-                title="lizard"
-                alt="lizard"
-                srcset=""
-              />
-            </div>
-          </figure>
-        </article>
-      </main>
 
       <article id="picking">
         <div class="pick">
