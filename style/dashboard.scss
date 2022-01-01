@@ -13,12 +13,13 @@
     border: 3px solid white;
     padding: 1% 6%;
 
-    p {
+    h2 {
       color: $scoreText;
       font-size: 1.05em;
+      font-weight: 100;
     }
 
-    h2 {
+    h3 {
       font-size: 4em;
     }
   }

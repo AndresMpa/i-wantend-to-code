@@ -14,128 +14,132 @@
     <title>Rock, Paper, Scissors, Spock, Lizard</title>
   </head>
   <body>
-    <nav class="dashboard">
-      <article class="container">
-        <img
-          alt="logo"
-          src="./assent/logo-bonus.svg"
-          srcset="./assent/logo-bonus.svg"
-        />
-        <article class="container score">
-          <p>SCORE</p>
-          <h2 id="score"></h2>
+    <main>
+      <nav role="dashboard" class="dashboard">
+        <article class="container">
+          <h1>
+            <img
+              alt="logo"
+              src="./assent/logo-bonus.svg"
+              srcset="./assent/logo-bonus.svg"
+            />
+          </h1>
+          <article class="container score">
+            <h2>SCORE</h2>
+            <h3 id="score"></h3>
+          </article>
         </article>
-      </article>
-    </nav>
+      </nav>
 
-    <section id="instruction">
-      <div class="cover"></div>
-      <article>
-        <div>
-          <h1>RULES</h1>
-          <figure id="closeInstructions">
+      <section role="instruction" id="instruction">
+        <div class="cover"></div>
+        <article>
+          <div>
+            <h2>RULES</h2>
+            <figure id="closeInstructions">
+              <img
+                alt="Close"
+                title="Close"
+                src="./assent/icon-close.svg"
+                srcset="./assent/icon-close.svg"
+              />
+            </figure>
+          </div>
+          <figure>
             <img
-              alt="Close"
-              title="Close"
-              src="./assent/icon-close.svg"
-              srcset="./assent/icon-close.svg"
+              alt="Rules"
+              title="Rules"
+              src="./assent/image-rules-bonus.svg"
+              srcset="./assent/image-rules-bonus.svg"
             />
           </figure>
-        </div>
-        <figure>
-          <img
-            alt="Rules"
-            title="Rules"
-            src="./assent/image-rules-bonus.svg"
-            srcset="./assent/image-rules-bonus.svg"
-          />
-        </figure>
-      </article>
-    </section>
+        </article>
+      </section>
 
-    <main class="game" id="game">
-      <article id="board">
-        <figure id="rock" title="rock" class="rock">
-          <div title="rock" class="rounded">
-            <img
-              srcset="./assent/icon-rock.svg"
-              src="./assent/icon-rock.svg"
-              title="rock"
-              alt="rock"
-            />
-          </div>
-        </figure>
-        <figure id="paper" title="paper" class="paper">
-          <div title="paper" class="rounded">
-            <img
-              srcset="./assent/icon-paper.svg"
-              src="./assent/icon-paper.svg"
-              title="paper"
-              alt="paper"
-            />
-          </div>
-        </figure>
-        <figure id="scissors" title="scissors" class="scissors">
-          <div title="scissors" class="rounded">
-            <img
-              srcset="./assent/icon-scissors.svg"
-              src="./assent/icon-scissors.svg"
-              title="scissors"
-              alt="scissors"
-            />
-          </div>
-        </figure>
-        <figure id="spock" title="spock" class="spock">
-          <div title="spock" class="rounded">
-            <img
-              srcset="./assent/icon-spock.svg"
-              src="./assent/icon-spock.svg"
-              title="spock"
-              alt="spock"
-            />
-          </div>
-        </figure>
-        <figure id="lizard" title="lizard" class="lizard">
-          <div title="lizard" class="rounded">
-            <img
-              srcset="./assent/icon-lizard.svg"
-              src="./assent/icon-lizard.svg"
-              title="lizard"
-              alt="lizard"
-            />
-          </div>
-        </figure>
-      </article>
-
-      <article id="picking">
-        <div class="pick">
-          <h1>You picked</h1>
-
-          <figure id="user" title="user" class="lizard">
-            <div title="user" class="rounded"></div>
+      <section role="game" class="game" id="game">
+        <article id="board">
+          <figure id="rock" title="rock" class="rock">
+            <div title="rock" class="rounded">
+              <img
+                srcset="./assent/icon-rock.svg"
+                src="./assent/icon-rock.svg"
+                title="rock"
+                alt="rock"
+              />
+            </div>
           </figure>
-        </div>
-
-        <article class="result">
-          <p id="result"></p>
-          <span id="playAgain"> PLAY AGAIN </span>
+          <figure id="paper" title="paper" class="paper">
+            <div title="paper" class="rounded">
+              <img
+                srcset="./assent/icon-paper.svg"
+                src="./assent/icon-paper.svg"
+                title="paper"
+                alt="paper"
+              />
+            </div>
+          </figure>
+          <figure id="scissors" title="scissors" class="scissors">
+            <div title="scissors" class="rounded">
+              <img
+                srcset="./assent/icon-scissors.svg"
+                src="./assent/icon-scissors.svg"
+                title="scissors"
+                alt="scissors"
+              />
+            </div>
+          </figure>
+          <figure id="spock" title="spock" class="spock">
+            <div title="spock" class="rounded">
+              <img
+                srcset="./assent/icon-spock.svg"
+                src="./assent/icon-spock.svg"
+                title="spock"
+                alt="spock"
+              />
+            </div>
+          </figure>
+          <figure id="lizard" title="lizard" class="lizard">
+            <div title="lizard" class="rounded">
+              <img
+                srcset="./assent/icon-lizard.svg"
+                src="./assent/icon-lizard.svg"
+                title="lizard"
+                alt="lizard"
+              />
+            </div>
+          </figure>
         </article>
 
-        <div class="pick">
-          <h1>The house picked</h1>
+        <article role="picking" id="picking">
+          <div class="pick">
+            <h2>You picked</h2>
 
-          <figure id="system" title="system" class="lizard">
-            <div title="system" class="rounded"></div>
-          </figure>
-        </div>
-      </article>
+            <figure id="user" title="user" class="lizard">
+              <div title="user" class="rounded"></div>
+            </figure>
+          </div>
+
+          <article class="result">
+            <h2 id="result"></h2>
+            <span id="playAgain"> PLAY AGAIN </span>
+          </article>
+
+          <div class="pick">
+            <h2>The house picked</h2>
+
+            <figure id="system" title="system" class="lizard">
+              <div title="system" class="rounded"></div>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section role="rules" class="rules">
+        <article class="container" id="rules">
+          <h2>RULES</h2>
+        </article>
+      </section>
     </main>
-
-    <section class="rules">
-      <article class="container" id="rules">
-        <p>RULES</p>
-      </article>
-    </section>
 
     <script type="module" src="./src/main.js"></script>
   </body>

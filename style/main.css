@@ -41,7 +41,7 @@ hr {
   top: -25px;
   padding: 0.8% 3%;
 }
-.rules article p {
+.rules article h2 {
   font-size: 1.15em;
   color: white;
 }
@@ -76,11 +76,12 @@ hr {
   border: 3px solid white;
   padding: 1% 6%;
 }
-.dashboard .score p {
+.dashboard .score h2 {
   color: #2a46c0;
   font-size: 1.05em;
+  font-weight: 100;
 }
-.dashboard .score h2 {
+.dashboard .score h3 {
   font-size: 4em;
 }
 
@@ -176,7 +177,7 @@ hr {
   height: 50vh;
   width: 80%;
 }
-.game #picking h1 {
+.game #picking h2 {
   margin-bottom: 15%;
   color: white;
 }
@@ -209,7 +210,7 @@ hr {
   text-align: center;
   font-size: 4em;
 }
-.game #picking .result p {
+.game #picking .result h2 {
   color: white;
 }
 .game #picking .result span {
@@ -268,7 +269,7 @@ hr {
   display: flex;
   margin: 0 0px;
 }
-#instruction article div:nth-child(1) h1 {
+#instruction article div:nth-child(1) h2 {
   font-size: 32px;
 }
 #instruction article div:nth-child(1) figure {
