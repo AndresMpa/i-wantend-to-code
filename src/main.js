@@ -11,9 +11,12 @@ import { loadData } from "./util/loadData.js";
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("/serviceWorker.js", { scope: "/" })
+      .register("./util/serviceWorker.js", { scope: "./util/" })
+      .then((reg) => {
+        console.log("Registration succeded, scope: " + reg.scope);
+      })
       .catch((error) => {
-        console.error(error);
+        console.error("Registration failed: " + error);
       });
   }
 })();
