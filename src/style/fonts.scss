@@ -1,2 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+@font-face {
+  font-family: "barlow-remi-condensed-v13-latin";
+  src: url("../asset/font/barlow-remi-condensed-v13-latin-regular.woff2")
+      format("woff2"),
+    url("../asset/font/barlow-remi-condensed-v13-latin-600.woff2")
+      format("woff2"),
+    url("../asset/font/barlow-remi-condensed-v13-latin-700.woff2")
+      format("woff2"),
+    url("../asset/font/barlow-remi-condensed-v13-latin-regular.woff")
+      format("woff"),
+    url("../asset/font/barlow-remi-condensed-v13-latin-600.woff")
+      format("woff"),
+    url("../asset/font/barlow-remi-condensed-v13-latin-700.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
 $barlow: "Barlow Semi Condensed", sans-serif;
