@@ -8,5 +8,4 @@ the logic behind it
 # Check its deploy
 
 This is also my first deploy to netlify and I love it <3
-
-https://621930b228db390df104b96e--peaceful-johnson-8f5712.netlify.app/
+https://rock-paper-sissors-spock-lizard.netlify.app/
