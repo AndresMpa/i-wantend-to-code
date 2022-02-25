@@ -13,7 +13,7 @@ const handleBoard = () => {
 const addPick = (obj, img) => {
   obj.parentNode.children[1].classList = "";
   obj.parentNode.children[1].classList.add(img);
-  let html = `<img src="./assent/icon-${img}.svg" alt="${img}" srcset="" />`;
+  let html = `<img src="./asset/icon-${img}.svg" alt="${img}" srcset="" />`;
   obj.children[0].innerHTML = "";
   obj.children[0].insertAdjacentHTML("afterbegin", html);
 };
