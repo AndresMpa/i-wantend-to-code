@@ -11,7 +11,7 @@ import { loadData } from "./util/loadData.js";
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("./util/serviceWorker.js", { scope: "./util/" })
+      .register("./rock-paper-scissors-spock-lizard/serviceWorker.js", { scope: "./rock-paper-scissors-spock-lizard/" })
       .then((reg) => {
         console.log("Registration succeded, scope: " + reg.scope);
       })
