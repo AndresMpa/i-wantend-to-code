@@ -13,7 +13,7 @@ import { loadData } from "./util/loadData.js";
     navigator.serviceWorker
       .register("/serviceWorker.js", { scope: "/" })
       .catch((error) => {
-        console.error(error.message);
+        console.error(error);
       });
   }
 })();
