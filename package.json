@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Just append something dude",
   "main": "index.html",
-  "type": "module",
   "scripts": {
     "test": "test",
     "start": "live-server index.html",
-    "build": "npx webpack --mode --production --config webpack.config.js",
-    "dev": "npx webpack --mode --production --config webpack.config.dev.js"
+    "build": "npx webpack --mode production --config webpack.config.js",
+    "dev": "npx webpack --mode development --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
