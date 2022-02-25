@@ -10,8 +10,10 @@ import { loadData } from "./util/loadData.js";
   displayRules();
 
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/serviceWorker.js").catch((error) => {
-      console.error(error.message);
-    });
+    navigator.serviceWorker
+      .register("/serviceWorker.js", { scope: "/" })
+      .catch((error) => {
+        console.error(error.message);
+      });
   }
 })();
